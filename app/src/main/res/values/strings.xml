@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sber_Custom_View</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="color">Color</string>
+    <string name="update">Update</string>
+    <string name="default_width">300</string>
+    <string name="default_height">300</string>
+</resources>

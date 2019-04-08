@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.nexp.pavel.sber_custom_view.MyRectangle
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edittext_width"
+        android:layout_width="@dimen/edittext_default_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/width"
+        android:inputType="numberDecimal"
+        android:text="@string/default_width" />
+
+    <EditText
+        android:id="@+id/edittext_height"
+        android:layout_width="@dimen/edittext_default_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/height"
+        android:inputType="numberDecimal"
+        android:text="@string/default_height"
+        app:layout_constraintTop_toBottomOf="@id/edittext_width" />
+
+    <EditText
+        android:id="@+id/edittext_color"
+        android:layout_width="@dimen/edittext_default_width"
+        android:layout_height="wrap_content"
+        android:hint="@string/color"
+        app:layout_constraintTop_toBottomOf="@id/edittext_height" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/update"
+        app:layout_constraintTop_toBottomOf="@id/edittext_color" />
+
+    <TextView
+        android:id="@+id/rect_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/coordinates_text_size"
+        app:layout_constraintTop_toBottomOf="@id/update" />
+
+    <TextView
+        android:id="@+id/rect_y"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/coordinates_text_size"
+        app:layout_constraintTop_toBottomOf="@id/rect_x" />
+
+</android.support.constraint.ConstraintLayout>
